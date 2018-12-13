@@ -750,7 +750,7 @@ for cmd in hel help
     complete -c hg -n "__fish_hg_using_command $cmd" -s e -l extension -d "show only help for extensions"
     complete -c hg -n "__fish_hg_using_command $cmd" -s c -l command -d "show only help for commands"
     complete -c hg -n "__fish_hg_using_command $cmd" -s k -l keyword -d "show topics matching keyword"
-    complete -c hg -n "__fish_hg_using_command $cmd" -s s -l system -x -d "show help for specific platform(s)"
+    complete -c hg -n "__fish_hg_using_command $cmd" -s s -l system -x -a "windows vms plan9 unix" -d "show help for specific platform(s)"
 end
 
 # hg histedit
